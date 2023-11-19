@@ -1,0 +1,41 @@
+<!-- index.html (Client-side) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Query Interface</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="logs-container">
+    <h2>Log Viewer</h2>
+
+    <!-- Buttons for sample queries -->
+    <button id="errorLogsButton">Find Error Logs</button>
+    <button id="searchLogsButton">Search Logs</button>
+    <button id="resourceIdLogsButton">Retrieve Logs by Resource ID</button>
+    <button id="timestampLogsButton">Filter Logs by Timestamp</button>
+
+    <!-- Input fields for search and filters -->
+    <label for="searchTerm">Search Term:</label>
+    <input type="text" id="searchTerm">
+
+    <label for="resourceId">Resource ID:</label>
+    <input type="text" id="resourceId">
+
+    <label for="startDate">Start Date:</label>
+    <input type="datetime-local" id="startDate">
+
+    <label for="endDate">End Date:</label>
+    <input type="datetime-local" id="endDate">
+
+    <!-- Result section -->
+    <div id="logs-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
